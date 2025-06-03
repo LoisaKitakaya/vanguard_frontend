@@ -18,7 +18,7 @@ function App(props) {
 
   return (
     <>
-      <div className="background">
+      <div className="bg-base-200">
         <Navbar />
 
         {props.children}

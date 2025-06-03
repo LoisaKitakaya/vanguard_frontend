@@ -93,10 +93,13 @@ function Home(props) {
 
       <div
         className="min-h-screen mx-4 flex justify-center items-center"
-        style={{ "background-image": `url(${bg_image})` }}
+        // style={{ "background-image": `url(${bg_image})` }}
         id="cta"
       >
-        <div className="bg-base-200 rounded-box p-8 text-center bg-cover bg-center">
+        <div
+          className="bg-base-200 rounded-box p-8 text-center bg-cover bg-center text-white shadow"
+          style={{ "background-image": `url(${bg_image})` }}
+        >
           <h1 className="text-4xl font-bold leading-tight">
             We Build, Automate, & Grow <br />
             Brands That Scale
@@ -187,10 +190,10 @@ function Home(props) {
         </div>
       </div>
 
-      <div className="mx-4 flex justify-center items-center pt-32 lg:pt-0">
+      <div className="mx-4 flex justify-center items-center pb- 0 lg:pb-32 pt-32">
         <div
-          className="bg-base-200 rounded-box p-8 text-center bg-cover bg-center"
-          //   style={{ "background-image": `url(${bg_image})` }}
+          className="bg-base-200 rounded-box p-8 text-center bg-cover bg-center text-white shadow"
+          style={{ "background-image": `url(${bg_image})` }}
         >
           <h2 className="text-2xl font-semibold mb-2">
             Let’s Build What’s Next for Your Brand
@@ -206,7 +209,7 @@ function Home(props) {
         className="min-h-screen mx-4 flex justify-center items-center"
         id="book-a-call"
       >
-        <fieldset className="fieldset bg-base-200 border-base-300 rounded-box w-full lg:w-2/5 border p-4">
+        <fieldset className="fieldset bg-base-100 rounded-box w-full lg:w-2/5 shadow p-4">
           <legend className="fieldset-legend">Book a call</legend>
 
           <form onSubmit={handleSubmit}>
