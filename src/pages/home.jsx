@@ -10,7 +10,7 @@ const submitBooking = async (data) => {
     body: JSON.stringify(data),
   };
 
-  const backendAPI = "http://127.0.0.1:8000";
+  const backendAPI = "https://freedomloisa.pythonanywhere.com";
 
   const url = `${backendAPI}/api/v1/book-a-call`;
 
