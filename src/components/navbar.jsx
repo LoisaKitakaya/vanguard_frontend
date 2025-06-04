@@ -23,22 +23,22 @@ function Navbar(porps) {
     <>
       <div className="navbar bg-base-100 w-full">
         <div className="navbar-start">
-          <a href="/#cta" className="block lg:hidden">
+          {/* <a href="/#cta" className="block lg:hidden">
             <img
               src={theme() === "light" ? logo_light : logo_dark}
               alt="logo"
               className="w-3/5 mx-auto"
             />
-          </a>
+          </a> */}
         </div>
         <div className="navbar-center">
-          <a href="/#cta" className="hidden lg:block">
+          {/* <a href="/#cta" className="hidden lg:block">
             <img
               src={theme() === "light" ? logo_light : logo_dark}
               alt="logo"
               className="w-1/5 mx-auto"
             />
-          </a>
+          </a> */}
         </div>
         <div className="navbar-end">
           <label className="flex cursor-pointer gap-2">

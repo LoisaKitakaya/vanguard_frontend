@@ -1,32 +1,7 @@
-import { Toaster } from "solid-toast";
-import Navbar from "./components/navbar";
-import Footer from "./components/footer";
-import { onMount } from "solid-js";
-
 function App(props) {
-  function setTheme(t) {
-    document.documentElement.setAttribute("data-theme", t);
-
-    localStorage.setItem("theme", t);
-  }
-
-  onMount(() => {
-    const saved = localStorage.getItem("theme") || "light";
-
-    setTheme(saved);
-  });
-
   return (
     <>
-      <div className="bg-base-200">
-        <Navbar />
-
-        {props.children}
-
-        <Footer />
-
-        <Toaster />
-      </div>
+      <div className="bg-base-100">{props.children}</div>
     </>
   );
 }
